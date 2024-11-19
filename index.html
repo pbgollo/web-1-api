@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Teste - API AJAX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Integração com API</h1>
+
+        <!-- Seção de Autenticação -->
+        <div class="section">
+            <h2>Autenticação</h2>
+            <button id="btn-auth">Autenticar</button>
+            <br>
+            <label for="token">Token de Autenticação:</label>
+            <input type="text" id="token" readonly>
+            <small>Este token será utilizado para autenticação nas próximas requisições.</small>
+        </div>
+
+        <!-- Seção de Busca de Clientes -->
+        <div class="section">
+            <h2>Buscar Clientes</h2>
+            <button id="btn-buscar-clientes">Buscar Clientes (Sem Autenticação)</button>
+            <br><br>
+            <label for="clientes-result">Clientes Encontrados:</label>
+            <textarea id="clientes-result" rows="10" readonly></textarea>
+        </div>
+
+        <!-- Seção de Busca de Clientes (Autenticados) -->
+        <div class="section">
+            <h2>Buscar Clientes (Autenticados)</h2>
+            <button id="btn-buscar-clientes-auth">Buscar Clientes (Com Token)</button>
+            <br><br>
+            <label for="clientes-auth-result">Clientes Autenticados:</label>
+            <textarea id="clientes-auth-result" rows="10" readonly></textarea>
+        </div>
+
+        <!-- Seção de Busca de Clientes (Autenticados com Cabeçalho) -->
+        <div class="section">
+            <h2>Buscar Clientes (Com Header)</h2>
+            <button id="btn-buscar-clientes-auth-header">Buscar Clientes (Com Token no Header)</button>
+            <br><br>
+            <label for="clientes-auth-header-result">Clientes com Header:</label>
+            <textarea id="clientes-auth-header-result" rows="10" readonly></textarea>
+        </div>
+
+        <!-- Seção de Cadastro de Clientes -->
+        <div class="section">
+            <h2>Cadastrar Cliente</h2>
+            <label for="cliente-nome">Nome:</label>
+            <input type="text" id="cliente-nome" placeholder="Nome do Cliente">
+            <br><br>
+            <label for="cliente-telefone">Telefone:</label>
+            <input type="text" id="cliente-telefone" placeholder="Telefone do Cliente">
+            <br><br>
+            <button id="btn-cadastrar-cliente">Cadastrar Cliente</button>
+            <br><br>
+            <label for="cadastro-result">Resultado do Cadastro:</label>
+            <textarea id="cadastro-result" rows="10" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

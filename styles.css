@@ -1,0 +1,162 @@
+/* Reset básico para garantir que o estilo seja consistente entre os navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição da fonte principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Seções */
+.section {
+    margin-bottom: 25px;
+}
+
+/* Estilos para os botões */
+button {
+    background-color: #4CAF50;  /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para os inputs de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilos para o textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Estilos para labels e instruções */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Instruções pequenas (ex.: informações sobre o token) */
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    button, input[type="text"], textarea {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo do campo de token */
+#token {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+
+/* Estilo para o botão de "Autenticar" */
+#btn-auth {
+    background-color: #2196F3;  /* Azul */
+}
+
+#btn-auth:hover {
+    background-color: #1976D2;
+}
+
+/* Estilo para as mensagens de erro ou sucesso */
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert-error {
+    background-color: #f44336;
+    color: white;
+}
