@@ -1,11 +1,9 @@
-/* Reset básico para garantir que o estilo seja consistente entre os navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definição da fonte principal */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7fc;
@@ -13,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Container principal */
 .container {
     width: 80%;
     max-width: 1000px;
@@ -24,7 +21,6 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Título principal */
 h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -32,7 +28,6 @@ h1 {
     color: #333;
 }
 
-/* Títulos das seções */
 h2 {
     font-size: 1.5rem;
     color: #333;
@@ -41,14 +36,12 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* Seções */
 .section {
     margin-bottom: 25px;
 }
 
-/* Estilos para os botões */
 button {
-    background-color: #4CAF50;  /* Verde */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -65,7 +58,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Estilos para os inputs de texto */
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -81,7 +73,6 @@ input[type="text"]:focus {
     outline: none;
 }
 
-/* Estilos para o textarea */
 textarea {
     width: 100%;
     padding: 10px;
@@ -93,14 +84,12 @@ textarea {
     box-sizing: border-box;
 }
 
-/* Estilos para labels e instruções */
 label {
     display: block;
     font-weight: bold;
     margin: 10px 0 5px;
 }
 
-/* Instruções pequenas (ex.: informações sobre o token) */
 small {
     display: block;
     margin-top: 5px;
@@ -108,7 +97,6 @@ small {
     color: #777;
 }
 
-/* Melhorando a responsividade */
 @media (max-width: 768px) {
     .container {
         width: 95%;
@@ -127,22 +115,19 @@ small {
     }
 }
 
-/* Estilo do campo de token */
 #token {
     background-color: #f9f9f9;
     cursor: not-allowed;
 }
 
-/* Estilo para o botão de "Autenticar" */
 #btn-auth {
-    background-color: #2196F3;  /* Azul */
+    background-color: #2196F3;  
 }
 
 #btn-auth:hover {
     background-color: #1976D2;
 }
 
-/* Estilo para as mensagens de erro ou sucesso */
 .alert {
     padding: 15px;
     margin: 10px 0;
